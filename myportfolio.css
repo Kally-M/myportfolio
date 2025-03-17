@@ -1,8 +1,10 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
     
 }
+
 main{
     display: flex;
     
@@ -19,17 +21,147 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color:black;
-    color:whitesmoke;
+    color:black;
 
 
 }
 h1{
-    color:#FFB302;
+    color:#ff9800;
 }
 .nav{
     display: flex;
     gap: 10px;
+    text-decoration: none;
+    color: #ff9800;
 
   
 
 }
+
+footer {
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 250px;
+  }
+  
+  .footer-section h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff9800;
+  }
+  
+  .socials a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .footer-bottom {
+    background: #111;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  .attractive-nav {
+    background: linear-gradient(90deg, black, white);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-image: url(Untitled.svg);
+  }
+  
+  .attractive-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 15px 0;
+  }
+  
+  .attractive-nav li {
+    margin: 0 20px;
+  }
+  
+  .attractive-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .attractive-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  .attractive-nav a:hover {
+    color: #000;
+  }
+  
+  .attractive-nav a:hover::after {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    .navbar ul {
+      flex-direction: column;
+    }
+    .navbar li {
+      margin: 10px 0;
+    }
+  }
+  
